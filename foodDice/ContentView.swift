@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State var isShowResult = 0
-    @AppStorage ("savedMenuList") var savedMenuList: Array?
+    //@AppStorage ("savedMenuList") var savedMenuList: Array?
     var body: some View {
         VStack {
             HStack {
