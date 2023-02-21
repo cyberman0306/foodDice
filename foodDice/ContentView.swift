@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State var isShowResult = 0
+    @AppStorage ("savedMenuList") var savedMenuList: Array?
     var body: some View {
         VStack {
             HStack {
@@ -17,12 +18,14 @@ struct ContentView: View {
                 } label: {
                     Image(systemName: "questionmark.app.fill")
                         .imageScale(.large)
-                        .foregroundColor(.accentColor)
+                        .foregroundColor(.white)
                 }
             }
             Spacer()
             if isShowResult > 0 {
-                Text(defultMenuArr.randomElement()!)
+                Text(menuArr.randomElement()!)
+                    .font(.system(size: 50, weight: .bold))
+                    .foregroundColor(Color.white)
             }
             Spacer()
             Button {
@@ -30,13 +33,16 @@ struct ContentView: View {
             } label: {
                 Image(systemName: "circle.square.fill")
                     .imageScale(.large)
-                    .foregroundColor(.accentColor)
+                    .foregroundColor(.white)
             }
             Text("roll it!")
+                .font(.body)
+                .fontWeight(.bold)
+                .foregroundColor(Color.white)
             Spacer()
         }
         .padding()
-
+        .background(Color.orange)
     }
 }
 

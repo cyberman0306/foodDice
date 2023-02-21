@@ -12,8 +12,9 @@
 		E4332C1329A39E4100823D42 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4332C1229A39E4100823D42 /* ContentView.swift */; };
 		E4332C1529A39E4300823D42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4332C1429A39E4300823D42 /* Assets.xcassets */; };
 		E4332C1829A39E4300823D42 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4332C1729A39E4300823D42 /* Preview Assets.xcassets */; };
-		E4332C1F29A3A69500823D42 /* ShowingMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4332C1E29A3A69500823D42 /* ShowingMenu.swift */; };
-		E4332C2129A3AEFF00823D42 /* AllMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4332C2029A3AEFF00823D42 /* AllMenu.swift */; };
+		E4332C2129A3AEFF00823D42 /* AllMenuSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4332C2029A3AEFF00823D42 /* AllMenuSource.swift */; };
+		F3F5840A29A4977C0047A8FC /* HelpModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F5840929A4977C0047A8FC /* HelpModalView.swift */; };
+		F3F5840D29A497D20047A8FC /* ManualSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F5840C29A497D20047A8FC /* ManualSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,9 +25,11 @@
 		E4332C1229A39E4100823D42 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E4332C1429A39E4300823D42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E4332C1729A39E4300823D42 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		E4332C1E29A3A69500823D42 /* ShowingMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowingMenu.swift; sourceTree = "<group>"; };
-		E4332C2029A3AEFF00823D42 /* AllMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllMenu.swift; sourceTree = "<group>"; };
+		E4332C2029A3AEFF00823D42 /* AllMenuSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllMenuSource.swift; sourceTree = "<group>"; };
 		E93F964D2952B2A9BD241010 /* Pods-foodDice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-foodDice.debug.xcconfig"; path = "Target Support Files/Pods-foodDice/Pods-foodDice.debug.xcconfig"; sourceTree = "<group>"; };
+		F3F5840929A4977C0047A8FC /* HelpModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpModalView.swift; sourceTree = "<group>"; };
+		F3F5840C29A497D20047A8FC /* ManualSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManualSource.swift; sourceTree = "<group>"; };
+		F3F5840E29A49E050047A8FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,10 +82,11 @@
 		E4332C0F29A39E4100823D42 /* foodDice */ = {
 			isa = PBXGroup;
 			children = (
+				F3F5840E29A49E050047A8FC /* Info.plist */,
+				F3F5840B29A497A50047A8FC /* Manual */,
 				E4332C1029A39E4100823D42 /* FoodDiceApp.swift */,
 				E4332C1229A39E4100823D42 /* ContentView.swift */,
-				E4332C1E29A3A69500823D42 /* ShowingMenu.swift */,
-				E4332C2029A3AEFF00823D42 /* AllMenu.swift */,
+				E4332C2029A3AEFF00823D42 /* AllMenuSource.swift */,
 				E4332C1429A39E4300823D42 /* Assets.xcassets */,
 				E4332C1629A39E4300823D42 /* Preview Content */,
 			);
@@ -97,6 +101,15 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		F3F5840B29A497A50047A8FC /* Manual */ = {
+			isa = PBXGroup;
+			children = (
+				F3F5840929A4977C0047A8FC /* HelpModalView.swift */,
+				F3F5840C29A497D20047A8FC /* ManualSource.swift */,
+			);
+			path = Manual;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -109,6 +122,7 @@
 				E4332C0A29A39E4100823D42 /* Frameworks */,
 				E4332C0B29A39E4100823D42 /* Resources */,
 				F3F5840829A4833B0047A8FC /* ShellScript */,
+				FEEDF0222FC3BA14FBD8A8F6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -204,6 +218,23 @@
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
 		};
+		FEEDF0222FC3BA14FBD8A8F6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-foodDice/Pods-foodDice-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-foodDice/Pods-foodDice-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-foodDice/Pods-foodDice-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -212,8 +243,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4332C1329A39E4100823D42 /* ContentView.swift in Sources */,
-				E4332C1F29A3A69500823D42 /* ShowingMenu.swift in Sources */,
-				E4332C2129A3AEFF00823D42 /* AllMenu.swift in Sources */,
+				F3F5840D29A497D20047A8FC /* ManualSource.swift in Sources */,
+				F3F5840A29A4977C0047A8FC /* HelpModalView.swift in Sources */,
+				E4332C2129A3AEFF00823D42 /* AllMenuSource.swift in Sources */,
 				E4332C1129A39E4100823D42 /* FoodDiceApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,7 +303,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -325,7 +357,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -347,6 +379,7 @@
 				DEVELOPMENT_TEAM = 33DNUM53Q8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = foodDice/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -378,6 +411,7 @@
 				DEVELOPMENT_TEAM = 33DNUM53Q8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = foodDice/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
