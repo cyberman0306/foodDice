@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E4332C1129A39E4100823D42 /* foodDiceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4332C1029A39E4100823D42 /* foodDiceApp.swift */; };
+		8497A12996BEDA7FA7D37310 /* Pods_foodDice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10CC303BE8659DC7250584FD /* Pods_foodDice.framework */; };
+		E4332C1129A39E4100823D42 /* FoodDiceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4332C1029A39E4100823D42 /* FoodDiceApp.swift */; };
 		E4332C1329A39E4100823D42 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4332C1229A39E4100823D42 /* ContentView.swift */; };
 		E4332C1529A39E4300823D42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4332C1429A39E4300823D42 /* Assets.xcassets */; };
 		E4332C1829A39E4300823D42 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4332C1729A39E4300823D42 /* Preview Assets.xcassets */; };
@@ -16,13 +17,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		10CC303BE8659DC7250584FD /* Pods_foodDice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_foodDice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		11A4916995BBFDDCF9499723 /* Pods-foodDice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-foodDice.release.xcconfig"; path = "Target Support Files/Pods-foodDice/Pods-foodDice.release.xcconfig"; sourceTree = "<group>"; };
 		E4332C0D29A39E4100823D42 /* foodDice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = foodDice.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E4332C1029A39E4100823D42 /* foodDiceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = foodDiceApp.swift; sourceTree = "<group>"; };
+		E4332C1029A39E4100823D42 /* FoodDiceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDiceApp.swift; sourceTree = "<group>"; };
 		E4332C1229A39E4100823D42 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E4332C1429A39E4300823D42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E4332C1729A39E4300823D42 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E4332C1E29A3A69500823D42 /* ShowingMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowingMenu.swift; sourceTree = "<group>"; };
 		E4332C2029A3AEFF00823D42 /* AllMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllMenu.swift; sourceTree = "<group>"; };
+		E93F964D2952B2A9BD241010 /* Pods-foodDice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-foodDice.debug.xcconfig"; path = "Target Support Files/Pods-foodDice/Pods-foodDice.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,17 +34,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8497A12996BEDA7FA7D37310 /* Pods_foodDice.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5B68AC72F03D3446CF0EBD98 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				10CC303BE8659DC7250584FD /* Pods_foodDice.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6422E6A14C499B10EF1AF7BB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E93F964D2952B2A9BD241010 /* Pods-foodDice.debug.xcconfig */,
+				11A4916995BBFDDCF9499723 /* Pods-foodDice.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		E4332C0429A39E4100823D42 = {
 			isa = PBXGroup;
 			children = (
 				E4332C0F29A39E4100823D42 /* foodDice */,
 				E4332C0E29A39E4100823D42 /* Products */,
+				6422E6A14C499B10EF1AF7BB /* Pods */,
+				5B68AC72F03D3446CF0EBD98 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,7 +79,7 @@
 		E4332C0F29A39E4100823D42 /* foodDice */ = {
 			isa = PBXGroup;
 			children = (
-				E4332C1029A39E4100823D42 /* foodDiceApp.swift */,
+				E4332C1029A39E4100823D42 /* FoodDiceApp.swift */,
 				E4332C1229A39E4100823D42 /* ContentView.swift */,
 				E4332C1E29A3A69500823D42 /* ShowingMenu.swift */,
 				E4332C2029A3AEFF00823D42 /* AllMenu.swift */,
@@ -80,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E4332C1B29A39E4300823D42 /* Build configuration list for PBXNativeTarget "foodDice" */;
 			buildPhases = (
+				BF3E15629A7F37389C60A563 /* [CP] Check Pods Manifest.lock */,
 				E4332C0929A39E4100823D42 /* Sources */,
 				E4332C0A29A39E4100823D42 /* Frameworks */,
 				E4332C0B29A39E4100823D42 /* Resources */,
+				F3F5840829A4833B0047A8FC /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -138,6 +164,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		BF3E15629A7F37389C60A563 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-foodDice-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3F5840829A4833B0047A8FC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E4332C0929A39E4100823D42 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -146,7 +214,7 @@
 				E4332C1329A39E4100823D42 /* ContentView.swift in Sources */,
 				E4332C1F29A3A69500823D42 /* ShowingMenu.swift in Sources */,
 				E4332C2129A3AEFF00823D42 /* AllMenu.swift in Sources */,
-				E4332C1129A39E4100823D42 /* foodDiceApp.swift in Sources */,
+				E4332C1129A39E4100823D42 /* FoodDiceApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +337,7 @@
 		};
 		E4332C1C29A39E4300823D42 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E93F964D2952B2A9BD241010 /* Pods-foodDice.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -283,6 +352,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -298,6 +368,7 @@
 		};
 		E4332C1D29A39E4300823D42 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11A4916995BBFDDCF9499723 /* Pods-foodDice.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,6 +383,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

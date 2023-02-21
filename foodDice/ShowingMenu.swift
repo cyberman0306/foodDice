@@ -1,21 +1,20 @@
+////
+////  ShowingMenu.swift
+////  foodDice
+////
+////  Created by yook on 2023/02/20.
+////
 //
-//  ShowingMenu.swift
-//  foodDice
+//import SwiftUI
 //
-//  Created by yook on 2023/02/20.
+//struct ShowingMenu: View {
+//    var body: some View {
 //
-
-import SwiftUI
-
-
-struct ShowingMenu: View {
-    var body: some View {
-        Text(menuArr.randomElement()!)
-    }
-}
-
-struct ShowingMenu_Previews: PreviewProvider {
-    static var previews: some View {
-        ShowingMenu()
-    }
-}
+//    }
+//}
+//
+//struct ShowingMenu_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ShowingMenu()
+//    }
+//}

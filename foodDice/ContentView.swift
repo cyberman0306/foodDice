@@ -8,8 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    
-    @State var isShowResult: Bool = false
+    @State var isShowResult = 0
     var body: some View {
         VStack {
             HStack {
@@ -17,14 +16,17 @@ struct ContentView: View {
                 Button {
                 } label: {
                     Image(systemName: "questionmark.app.fill")
+                        .imageScale(.large)
+                        .foregroundColor(.accentColor)
                 }
             }
             Spacer()
-            if isShowResult {
-                ShowingMenu()
+            if isShowResult > 0 {
+                Text(defultMenuArr.randomElement()!)
             }
+            Spacer()
             Button {
-                isShowResult = true
+                isShowResult += 1
             } label: {
                 Image(systemName: "circle.square.fill")
                     .imageScale(.large)
@@ -37,7 +39,6 @@ struct ContentView: View {
 
     }
 }
-
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
