@@ -5,6 +5,7 @@
 //  Created by cnu on 2023/02/22.
 //
 import SwiftUI
+import CoreLocation
 import NMapsMap
 
 struct MapsView: View {
@@ -19,10 +20,10 @@ struct MapsView: View {
 struct UIMapView: UIViewRepresentable {
     func makeUIView(context: Context) -> NMFNaverMapView {
         let view = NMFNaverMapView()
-        view.showZoomControls = false
+        view.showCompass = true
+        view.showLocationButton = true
         view.mapView.positionMode = .direction
         view.mapView.zoomLevel = 17
-
         return view
     }
 
