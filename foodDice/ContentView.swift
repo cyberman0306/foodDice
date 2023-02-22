@@ -9,27 +9,51 @@ import SwiftUI
 
 struct ContentView: View {
     @State var isShowResult = 0
-    //@AppStorage ("savedMenuList") var savedMenuList: Array?
+    @State private var isHelpModalShow = false
+    @State private var isPlusMenuModalShow = false
     var body: some View {
         VStack {
             HStack {
                 Spacer()
                 Button {
+                    self.isPlusMenuModalShow.toggle()
+                } label: {
+                    Image(systemName: "plus.square.fill")
+                        .imageScale(.large)
+                        .foregroundColor(.white)
+                }
+                .sheet(isPresented: self.$isPlusMenuModalShow) {
+                    EditMenuArrayModal()
+                }
+                Button {
+                    self.isHelpModalShow.toggle()
                 } label: {
                     Image(systemName: "questionmark.app.fill")
                         .imageScale(.large)
                         .foregroundColor(.white)
                 }
+                .sheet(isPresented: self.$isHelpModalShow) {
+                    HelpModalView()
+                }
             }
             Spacer()
             if isShowResult > 0 {
-                Text(menuArr.randomElement()!)
-                    .font(.system(size: 50, weight: .bold))
-                    .foregroundColor(Color.white)
+                let menuString = String(menuArr.randomElement() ?? "error!")
+                Button {
+
+                } label: {
+                    Text(menuString)
+                        .font(.system(size: 50, weight: .bold))
+                        .foregroundColor(Color.white)
+                }
             }
             Spacer()
             Button {
-                isShowResult += 1
+                if isShowResult > 100 {
+                    isShowResult = 1
+                } else {
+                    isShowResult += 1
+                }
             } label: {
                 Image(systemName: "circle.square.fill")
                     .imageScale(.large)

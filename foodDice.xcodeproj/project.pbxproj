@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8497A12996BEDA7FA7D37310 /* Pods_foodDice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10CC303BE8659DC7250584FD /* Pods_foodDice.framework */; };
+		E431386929A5101E00AEDD0E /* EditMenuArrayModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = E431386829A5101E00AEDD0E /* EditMenuArrayModal.swift */; };
 		E4332C1129A39E4100823D42 /* FoodDiceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4332C1029A39E4100823D42 /* FoodDiceApp.swift */; };
 		E4332C1329A39E4100823D42 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4332C1229A39E4100823D42 /* ContentView.swift */; };
 		E4332C1529A39E4300823D42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4332C1429A39E4300823D42 /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 /* Begin PBXFileReference section */
 		10CC303BE8659DC7250584FD /* Pods_foodDice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_foodDice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		11A4916995BBFDDCF9499723 /* Pods-foodDice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-foodDice.release.xcconfig"; path = "Target Support Files/Pods-foodDice/Pods-foodDice.release.xcconfig"; sourceTree = "<group>"; };
+		E431386829A5101E00AEDD0E /* EditMenuArrayModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditMenuArrayModal.swift; sourceTree = "<group>"; };
 		E4332C0D29A39E4100823D42 /* foodDice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = foodDice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4332C1029A39E4100823D42 /* FoodDiceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDiceApp.swift; sourceTree = "<group>"; };
 		E4332C1229A39E4100823D42 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -83,9 +85,10 @@
 			isa = PBXGroup;
 			children = (
 				F3F5840E29A49E050047A8FC /* Info.plist */,
+				E4332C1229A39E4100823D42 /* ContentView.swift */,
 				F3F5840B29A497A50047A8FC /* Manual */,
 				E4332C1029A39E4100823D42 /* FoodDiceApp.swift */,
-				E4332C1229A39E4100823D42 /* ContentView.swift */,
+				E431386829A5101E00AEDD0E /* EditMenuArrayModal.swift */,
 				E4332C2029A3AEFF00823D42 /* AllMenuSource.swift */,
 				E4332C1429A39E4300823D42 /* Assets.xcassets */,
 				E4332C1629A39E4300823D42 /* Preview Content */,
@@ -242,6 +245,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E431386929A5101E00AEDD0E /* EditMenuArrayModal.swift in Sources */,
 				E4332C1329A39E4100823D42 /* ContentView.swift in Sources */,
 				F3F5840D29A497D20047A8FC /* ManualSource.swift in Sources */,
 				F3F5840A29A4977C0047A8FC /* HelpModalView.swift in Sources */,

@@ -9,7 +9,12 @@ import SwiftUI
 
 struct HelpModalView: View {
     var body: some View {
-        Text("Hello, World!")
+        VStack {
+            Text("roll it!을 눌러 메뉴를 골라봅시다")
+                .foregroundColor(.orange)
+            Text("표시된 메뉴를 눌러 근처 지도를 탐색해 봅시다")
+                .foregroundColor(.orange)
+        }
     }
 }
 
