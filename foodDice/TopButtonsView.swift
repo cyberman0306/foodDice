@@ -14,7 +14,20 @@ struct TopButtonsView: View {
     @Binding var colorMainValue: Color
     @Binding var colorSubValue: Color
     var body: some View {
+
         HStack {
+            ColorPicker(selection: $colorMainValue) {
+                Text("")
+            }
+            Button {
+                colorData.saveMainColor(color: colorMainValue)
+            } label: {
+                Text("SAVE")
+                    .font(.body)
+                    .fontWeight(.bold)
+                    .foregroundColor(colorSubValue)
+            }
+
             Spacer()
             Button {
                 self.isPlusMenuModalShow.toggle()
@@ -35,16 +48,6 @@ struct TopButtonsView: View {
             }
             .sheet(isPresented: self.$isHelpModalShow) {
                 HelpModalView(colorMainValue: $colorMainValue, colorSubValue: $colorSubValue)
-            }
-            Button {
-                self.isSettingModalShow.toggle()
-            } label: {
-                Image(systemName: "paintbrush.fill")
-                    .imageScale(.large)
-                    .foregroundColor(colorSubValue)
-            }
-            .sheet(isPresented: self.$isSettingModalShow) {
-                SettingModalView(colorMainValue: $colorMainValue, colorSubValue: $colorSubValue)
             }
             Spacer()
                 .frame(width: 10)

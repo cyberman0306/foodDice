@@ -13,8 +13,13 @@ struct HelpModalView: View {
     var body: some View {
         VStack {
             Text("roll it!을 눌러 메뉴를 골라봅시다")
+                .font(.body)
+                .fontWeight(.bold)
                 .foregroundColor(colorMainValue)
+            Text("")
             Text("표시된 메뉴를 눌러 근처 지도를 탐색해 봅시다")
+                .font(.body)
+                .fontWeight(.bold)
                 .foregroundColor(colorMainValue)
         }
     }

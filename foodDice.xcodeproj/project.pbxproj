@@ -16,9 +16,9 @@
 		E4332C2129A3AEFF00823D42 /* AllMenuSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4332C2029A3AEFF00823D42 /* AllMenuSource.swift */; };
 		F3C1749B29A6F1B7000416F7 /* TopButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C1749A29A6F1B7000416F7 /* TopButtonsView.swift */; };
 		F3C1749D29A6FF95000416F7 /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C1749C29A6FF95000416F7 /* Setting.swift */; };
-		F3C1749F29A70976000416F7 /* SettingModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C1749E29A70976000416F7 /* SettingModalView.swift */; };
 		F3DB29FB29A5AA8000FF73E3 /* MapsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DB29FA29A5AA8000FF73E3 /* MapsView.swift */; };
 		F3DB29FD29A5AE0900FF73E3 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DB29FC29A5AE0900FF73E3 /* MainView.swift */; };
+		F3E387EF29A7314B0027F248 /* MapSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E387EE29A7314B0027F248 /* MapSearchView.swift */; };
 		F3F5840A29A4977C0047A8FC /* HelpModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F5840929A4977C0047A8FC /* HelpModalView.swift */; };
 /* End PBXBuildFile section */
 
@@ -35,9 +35,9 @@
 		E93F964D2952B2A9BD241010 /* Pods-foodDice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-foodDice.debug.xcconfig"; path = "Target Support Files/Pods-foodDice/Pods-foodDice.debug.xcconfig"; sourceTree = "<group>"; };
 		F3C1749A29A6F1B7000416F7 /* TopButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopButtonsView.swift; sourceTree = "<group>"; };
 		F3C1749C29A6FF95000416F7 /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
-		F3C1749E29A70976000416F7 /* SettingModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingModalView.swift; sourceTree = "<group>"; };
 		F3DB29FA29A5AA8000FF73E3 /* MapsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsView.swift; sourceTree = "<group>"; };
 		F3DB29FC29A5AE0900FF73E3 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		F3E387EE29A7314B0027F248 /* MapSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapSearchView.swift; sourceTree = "<group>"; };
 		F3F5840929A4977C0047A8FC /* HelpModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpModalView.swift; sourceTree = "<group>"; };
 		F3F5840E29A49E050047A8FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -96,7 +96,6 @@
 				E4332C1229A39E4100823D42 /* ContentView.swift */,
 				F3C1749A29A6F1B7000416F7 /* TopButtonsView.swift */,
 				F3DB29FC29A5AE0900FF73E3 /* MainView.swift */,
-				F3C1749C29A6FF95000416F7 /* Setting.swift */,
 				F3F03DC629A5B09400C59508 /* MenuListModal */,
 				F3DB29F729A5A96000FF73E3 /* Map */,
 				F3F5840B29A497A50047A8FC /* Manual */,
@@ -119,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				F3DB29FA29A5AA8000FF73E3 /* MapsView.swift */,
+				F3E387EE29A7314B0027F248 /* MapSearchView.swift */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -136,7 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				F3F5840929A4977C0047A8FC /* HelpModalView.swift */,
-				F3C1749E29A70976000416F7 /* SettingModalView.swift */,
+				F3C1749C29A6FF95000416F7 /* Setting.swift */,
 			);
 			path = Manual;
 			sourceTree = "<group>";
@@ -277,12 +277,12 @@
 				F3DB29FD29A5AE0900FF73E3 /* MainView.swift in Sources */,
 				F3C1749D29A6FF95000416F7 /* Setting.swift in Sources */,
 				E4332C1329A39E4100823D42 /* ContentView.swift in Sources */,
+				F3E387EF29A7314B0027F248 /* MapSearchView.swift in Sources */,
 				F3F5840A29A4977C0047A8FC /* HelpModalView.swift in Sources */,
 				F3DB29FB29A5AA8000FF73E3 /* MapsView.swift in Sources */,
 				E4332C2129A3AEFF00823D42 /* AllMenuSource.swift in Sources */,
 				E4332C1129A39E4100823D42 /* FoodDiceApp.swift in Sources */,
 				F3C1749B29A6F1B7000416F7 /* TopButtonsView.swift in Sources */,
-				F3C1749F29A70976000416F7 /* SettingModalView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

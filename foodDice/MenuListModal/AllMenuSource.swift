@@ -7,10 +7,9 @@
 
 import SwiftUI
 
-struct MenuArrayType : Identifiable
-{
+struct MenuArrayType: Identifiable {
     var id = UUID()
-    var name : String
+    var name: String
 }
 
 var menuArr = ["라면", "삼겹살", "치킨", "쌀국수",
