@@ -14,12 +14,12 @@
 		E4332C1529A39E4300823D42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4332C1429A39E4300823D42 /* Assets.xcassets */; };
 		E4332C1829A39E4300823D42 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4332C1729A39E4300823D42 /* Preview Assets.xcassets */; };
 		E4332C2129A3AEFF00823D42 /* AllMenuSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4332C2029A3AEFF00823D42 /* AllMenuSource.swift */; };
-		F3DB29F929A5A97100FF73E3 /* Maps.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DB29F829A5A97100FF73E3 /* Maps.swift */; };
+		F3C1749B29A6F1B7000416F7 /* TopButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C1749A29A6F1B7000416F7 /* TopButtonsView.swift */; };
+		F3C1749D29A6FF95000416F7 /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C1749C29A6FF95000416F7 /* Setting.swift */; };
+		F3C1749F29A70976000416F7 /* SettingModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C1749E29A70976000416F7 /* SettingModalView.swift */; };
 		F3DB29FB29A5AA8000FF73E3 /* MapsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DB29FA29A5AA8000FF73E3 /* MapsView.swift */; };
 		F3DB29FD29A5AE0900FF73E3 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DB29FC29A5AE0900FF73E3 /* MainView.swift */; };
-		F3F03DC829A5BA0200C59508 /* searchInNaverMaps.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F03DC729A5BA0200C59508 /* searchInNaverMaps.swift */; };
 		F3F5840A29A4977C0047A8FC /* HelpModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F5840929A4977C0047A8FC /* HelpModalView.swift */; };
-		F3F5840D29A497D20047A8FC /* ManualSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F5840C29A497D20047A8FC /* ManualSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,12 +33,12 @@
 		E4332C1729A39E4300823D42 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E4332C2029A3AEFF00823D42 /* AllMenuSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllMenuSource.swift; sourceTree = "<group>"; };
 		E93F964D2952B2A9BD241010 /* Pods-foodDice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-foodDice.debug.xcconfig"; path = "Target Support Files/Pods-foodDice/Pods-foodDice.debug.xcconfig"; sourceTree = "<group>"; };
-		F3DB29F829A5A97100FF73E3 /* Maps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Maps.swift; sourceTree = "<group>"; };
+		F3C1749A29A6F1B7000416F7 /* TopButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopButtonsView.swift; sourceTree = "<group>"; };
+		F3C1749C29A6FF95000416F7 /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
+		F3C1749E29A70976000416F7 /* SettingModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingModalView.swift; sourceTree = "<group>"; };
 		F3DB29FA29A5AA8000FF73E3 /* MapsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsView.swift; sourceTree = "<group>"; };
 		F3DB29FC29A5AE0900FF73E3 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
-		F3F03DC729A5BA0200C59508 /* searchInNaverMaps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchInNaverMaps.swift; sourceTree = "<group>"; };
 		F3F5840929A4977C0047A8FC /* HelpModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpModalView.swift; sourceTree = "<group>"; };
-		F3F5840C29A497D20047A8FC /* ManualSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManualSource.swift; sourceTree = "<group>"; };
 		F3F5840E29A49E050047A8FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -94,7 +94,9 @@
 			children = (
 				E4332C1029A39E4100823D42 /* FoodDiceApp.swift */,
 				E4332C1229A39E4100823D42 /* ContentView.swift */,
+				F3C1749A29A6F1B7000416F7 /* TopButtonsView.swift */,
 				F3DB29FC29A5AE0900FF73E3 /* MainView.swift */,
+				F3C1749C29A6FF95000416F7 /* Setting.swift */,
 				F3F03DC629A5B09400C59508 /* MenuListModal */,
 				F3DB29F729A5A96000FF73E3 /* Map */,
 				F3F5840B29A497A50047A8FC /* Manual */,
@@ -116,9 +118,7 @@
 		F3DB29F729A5A96000FF73E3 /* Map */ = {
 			isa = PBXGroup;
 			children = (
-				F3DB29F829A5A97100FF73E3 /* Maps.swift */,
 				F3DB29FA29A5AA8000FF73E3 /* MapsView.swift */,
-				F3F03DC729A5BA0200C59508 /* searchInNaverMaps.swift */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -136,7 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				F3F5840929A4977C0047A8FC /* HelpModalView.swift */,
-				F3F5840C29A497D20047A8FC /* ManualSource.swift */,
+				F3C1749E29A70976000416F7 /* SettingModalView.swift */,
 			);
 			path = Manual;
 			sourceTree = "<group>";
@@ -275,14 +275,14 @@
 			files = (
 				E431386929A5101E00AEDD0E /* EditMenuArrayModal.swift in Sources */,
 				F3DB29FD29A5AE0900FF73E3 /* MainView.swift in Sources */,
+				F3C1749D29A6FF95000416F7 /* Setting.swift in Sources */,
 				E4332C1329A39E4100823D42 /* ContentView.swift in Sources */,
-				F3DB29F929A5A97100FF73E3 /* Maps.swift in Sources */,
-				F3F03DC829A5BA0200C59508 /* searchInNaverMaps.swift in Sources */,
-				F3F5840D29A497D20047A8FC /* ManualSource.swift in Sources */,
 				F3F5840A29A4977C0047A8FC /* HelpModalView.swift in Sources */,
 				F3DB29FB29A5AA8000FF73E3 /* MapsView.swift in Sources */,
 				E4332C2129A3AEFF00823D42 /* AllMenuSource.swift in Sources */,
 				E4332C1129A39E4100823D42 /* FoodDiceApp.swift in Sources */,
+				F3C1749B29A6F1B7000416F7 /* TopButtonsView.swift in Sources */,
+				F3C1749F29A70976000416F7 /* SettingModalView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
