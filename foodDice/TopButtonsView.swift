@@ -10,7 +10,6 @@ import SwiftUI
 struct TopButtonsView: View {
     @State private var isHelpModalShow = false
     @State private var isPlusMenuModalShow = false
-    @State private var isSettingModalShow = false
     @Binding var colorMainValue: Color
     @Binding var colorSubValue: Color
     var body: some View {
